@@ -17,10 +17,10 @@ This option uses terraform and will set up the required cloud infrastructure (La
 ### Rest API with API Gateway
 
 1. Create two API resources (API endpoints) one representing client orders to business and the other representing conformation email for client
-2. Create a **method** via "Actions" button
+2. Create a **method** via **"Actions"** button
 3. Enable cors on API endpoint, and only allow request from AmoriaTea domain (i.e. www.domain.com)
 4. Deploy API, this will ask you to stage your API **The url given after deploy is not correct**
-   (i.e. https://something/**stage name**/**your endpoint**)
+   (i.e. https://something/ **stage name** /**your endpoint**)
 
 
 ### Lambda Function
@@ -30,5 +30,7 @@ got from sendgrid
 
 1. Create two different Lambda Functions for both API endpoints (choose the latest version of python)
 2. Use the zip files that from the github repo
-3. **Optional** You can upload via s3 or from your system
-4. Go to runtime settings to change handler name to "lambda_function.lambda_handler"
+3. Go to runtime settings to change handler name to "lambda_function.lambda_handler"
+
+**Optional** You can upload via s3 or from your system
+
